@@ -1,0 +1,13 @@
+{
+	"id": "nodebb-plugin-autolocktopics",
+	"name": "NodeBB AutoLockTopics",
+	"description": "Lock topic with N posts or more",
+	"url": "",
+	"library": "./library.js",
+
+	"hooks": [
+		{ "hook": "filter:user.updateProfile", "method": "controlledUpdateProfile", "callbacked": true },
+		{ "hook": "action:post.save", "method": "lockTopic", "callbacked": true }
+	],
+  "minver": "0.6.1"
+}
