@@ -14,6 +14,7 @@ var plugin = {};
 
 plugin.lockTopic = function (data, callback) {
 
+	//configure your thread limit
     var limit = 1000;
 
     //console.log(data);
